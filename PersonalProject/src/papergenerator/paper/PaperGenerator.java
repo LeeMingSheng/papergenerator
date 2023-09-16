@@ -6,7 +6,7 @@ import java.util.TreeMap;
 public abstract class PaperGenerator {
   //小学符号
   protected TreeMap<Integer, String> symbolForPrimary = new TreeMap<>();
-  ProblemGenerator problemGenerator = new ProblemGenerator();
+  protected ProblemGenerator problemGenerator = new ProblemGenerator();
 
   public abstract void generatePaper(int n, File freshFile);
 

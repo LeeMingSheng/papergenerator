@@ -1,18 +1,19 @@
 package papergenerator.user;
 
-import java.io.File;
 import papergenerator.paper.FileGenerator;
 import papergenerator.paper.JuniorPaperGenerator;
 import papergenerator.paper.PrimaryPaperGenerator;
 import papergenerator.paper.SeniorPaperGenerator;
 
+import java.io.File;
+
 public class TeacherUser {
   private String userName;
   private String userPassword;
   private String accountType;
-  PrimaryPaperGenerator primaryPaperGenerator = new PrimaryPaperGenerator();
-  JuniorPaperGenerator juniorPaperGenerator = new JuniorPaperGenerator();
-  SeniorPaperGenerator seniorPaperGenerator = new SeniorPaperGenerator();
+  private PrimaryPaperGenerator primaryPaperGenerator = new PrimaryPaperGenerator();
+  private JuniorPaperGenerator juniorPaperGenerator = new JuniorPaperGenerator();
+  private SeniorPaperGenerator seniorPaperGenerator = new SeniorPaperGenerator();
 
   public TeacherUser(String userName, String userPassword, String accountType) {
     this.userName = userName;
